@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var buffer = new Buffer("Hello","utf-8");
+var buffer = new Buffer(fs.readFileSync("index.html").toString(),"utf-8");
 
 //buffer = fs.readFileSync("index.html");
 
